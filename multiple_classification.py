@@ -37,7 +37,7 @@ if(selected == 'Stress'):
     Stress_predict = ''
     
     if st.button('Predict'):
-        stress_predict = stress_model.predict([[
+        Stress_predict = stress_model.predict([[
             float(Age),
             float(Gender),
             float(Occupation),
@@ -51,8 +51,7 @@ if(selected == 'Stress'):
             float(Weekend_Screen_Time_Hours)
             
         ]])
-       
-    st.success(stress_predict)
+    st.success(Stress_predict)
 
    
 if(selected == 'LOAN'):
